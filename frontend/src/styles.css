@@ -35,3 +35,22 @@ button.ghost { background: transparent; color: var(--ink); border: 1px solid var
 input, textarea { width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--line); font: inherit; margin: 6px 0 12px; background: #fff; }
 .menu-btn { position: fixed; left: 16px; top: 16px; z-index: 10; }
 .err { color: #a33; }
+
+/* 凑份子进度 —— 四路共用 */
+.pro { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+.pro-none { opacity: .75; }
+.pro .bar { flex: 0 0 120px; height: 8px; border-radius: 999px; background: #f0ddd3; overflow: hidden; }
+.pro .bar i { display: block; height: 100%; background: var(--rose); border-radius: 999px; transition: width .3s; }
+.pro .bar i.done { background: #7fae8c; }
+.pro .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--rose); box-shadow: 0 0 0 3px rgba(232,160,160,.25); }
+.pro .dot.done { background: #7fae8c; box-shadow: 0 0 0 3px rgba(127,174,140,.25); }
+.pro-bar { width: 100%; margin: 10px 0; }
+.pro-badge { background: #fff3ec; border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px 3px 7px; }
+.corner { position: absolute; top: 12px; right: 14px; }
+.card { position: relative; }
+.aside { margin: 6px 0 0; }
+.detail .row { display: flex; gap: 8px; align-items: center; }
+.detail .row input { margin: 6px 0; }
+.chipin { margin-top: 24px; border-top: 1px dashed var(--line); padding-top: 12px; }
+.chipin h2 { font-size: 1.2rem; margin: 4px 0 8px; }
+.ledger { font-size: 13px; color: var(--muted); padding-left: 18px; margin: 8px 0 0; }
