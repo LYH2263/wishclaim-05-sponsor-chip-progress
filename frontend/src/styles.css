@@ -35,3 +35,22 @@ button.ghost { background: transparent; color: var(--ink); border: 1px solid var
 input, textarea { width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--line); font: inherit; margin: 6px 0 12px; background: #fff; }
 .menu-btn { position: fixed; left: 16px; top: 16px; z-index: 10; }
 .err { color: #a33; }
+.card { position: relative; }
+.corner {
+  position: absolute; right: 10px; top: 10px; font-size: 11px; padding: 2px 8px;
+  border-radius: 999px; background: #f0dcd2; color: var(--muted);
+}
+.corner.on { background: var(--rose); color: #fff; }
+.fund { margin: 8px 0; }
+.fund-bar { height: 8px; border-radius: 999px; background: #f0e2d9; overflow: hidden; }
+.fund-bar i { display: block; height: 100%; background: var(--rose); border-radius: 999px; transition: width .25s; }
+.fund.done .fund-bar i { background: #7bb38a; }
+.fund-label { display: block; margin-top: 3px; }
+.box {
+  border: 1px dashed var(--line); border-radius: 16px; padding: 12px 14px; margin: 14px 0;
+  background: rgba(255,255,255,.5);
+}
+.box h3 { margin: 0 0 4px; }
+.ledger { list-style: none; margin: 10px 0 0; padding: 0; font-size: 13px; }
+.ledger li { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dotted var(--line); }
+button:disabled { opacity: .45; cursor: not-allowed; }
